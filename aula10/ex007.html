@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex007</title>
+</head>
+<body>
+    <h1>soma valores </h1>
+    <input type="number" name="tn1" id="tn1"> +
+    <input type="number" name="tn2" id="tn2">
+    <input type="button" value="somar" onclick="clicar()">
+    <div id="valor">valor</div>
+    <script>
+        function clicar() {
+            var tn1 = window.document.getElementById('tn1')
+            var tn2 = window.document.getElementById('tn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            window.document.getElementById('valor').innerHTML = `ò vlaor de ${n1} mais ${n2} e ${s}`
+        }
+    </script>
+    
+</body>
+</html>

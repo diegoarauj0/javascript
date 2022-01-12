@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evento</title>
+    <style>
+        div {
+            max-width: 500px;
+            height: 500px;
+            background-color: rgb(151, 151, 151);
+            border: 3px solid rgb(255, 0, 0);
+            margin: auto;
+            text-align: center;
+            line-height: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        Click aqui
+    </div>
+    <script>
+        window.document.getElementById('div').addEventListener('click' , clicar)
+        window.document.getElementById('div').addEventListener('mouseenter' , entra)
+        window.document.getElementById('div').addEventListener('mouseout' , sair)
+        window.document.getElementById('div').addEventListener('mouseup' , nclicar)
+         function clicar() {
+             window.document.getElementById('div').innerText = 'oi'
+         }
+         function entra() {
+            window.document.getElementById('div').style.backgroundColor = 'red'
+         }
+         function sair() {
+            window.document.getElementById('div').style.backgroundColor = null
+            window.document.getElementById('div').innerText = 'Click aqui'
+         }
+         function nclicar() {
+            window.document.getElementById('div').innerText = 'Click aqui'
+         }
+    </script>
+</body>
+</html>
