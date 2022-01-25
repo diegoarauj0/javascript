@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        button {
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ano Bissexto</h1>
+    <button>Verificar</button>
+    <div>informe um ano para saber se ele é bissexto </div>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', aperta)
+        function aperta(){
+            var ano = Number.parseInt(window.prompt('Qual é o ano que vc quer verificar?'))
+            if (ano%4 == 0) {
+                var area = 'Bissexto'
+                window.document.getElementsByTagName('div')[0].style.color = 'green'
+            } else {
+                 var area = 'Não Bissexto'
+                 window.document.getElementsByTagName('div')[0].style.color = 'red'
+            }
+            window.document.getElementsByTagName('div')[0].innerHTML = `O ano de ${ano} ${area}`
+        
+        }
+    </script>
+</body>
+</html>
