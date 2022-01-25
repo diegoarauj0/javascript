@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 8</title>
+</head>
+<body>
+    <h1>Desconto de 10%</h1>
+    <button>Calcular</button>
+    <div></div>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', aperta)
+        function aperta() {
+            var nome = window.prompt('Qual e o nome do produto')
+            var preço = Number(window.prompt(`Qual e o preço do ou da "${nome}"`))
+            var resp = (10 / 100) * preço
+            var final = preço - resp
+            window.document.getElementsByTagName('div')[0].innerHTML = `preço original da/do ${nome} e ${preço.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} <br> Economia de ${resp.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} <br> preço final e de ${final.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} `
+
+        }
+    </script>
+</body>
+</html>

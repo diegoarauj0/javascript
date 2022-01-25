@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+    <style>
+        button {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button>Converter</button>
+    <div>Clique no botão para iniciar</div>
+    <script>
+        window.document.getElementsByTagName('button')[0].addEventListener('click', aperta)
+        function aperta() {
+            var Metros = Number.parseFloat(window.prompt('Digite um distancia em Metros '))
+            var Km = Metros / 1000
+            var Hm = Metros / 100
+            var Dam = Metros * 100
+            var Dm = Metros * 10000
+            var Cm = Metros * 100
+            var Mm = Metros * 1000
+            window.document.getElementsByTagName('div')[0].innerHTML = `${Km.toString().replace(".", ",")} Quilometro(Km) <br> ${Hm.toString().replace(".", ",")} Hectômetos(Hm) <br> ${Dam.toString().replace(".", ",")} Decâmetros(Dam) <br> ${Dm.toString().replace(".", ",")} Decímetros(Dm) <br> ${Cm.toString().replace(".", ",")} Centímetros (Cm) <br> ${Mm.toString().replace(".", ",")} milímetros (Mm) `
+
+        }
+    </script>
+</body>
+</html>
