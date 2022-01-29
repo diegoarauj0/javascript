@@ -9,49 +9,45 @@ header {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px black;
 }
 section {
     background-color: white;
     border-radius: 8px;
     padding: 15px;
     margin: auto;
-    width: 500px;
+    width: 390px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
 }
 div#cont > p {
-    text-transform: uppercase;
     font-weight: 800;
-}
-div#cont > button {
     text-transform: uppercase;
-    font-weight: 800;
+    margin: 3px;
+    display: inline-block;
 }
 div#cont > input {
-    padding: 4px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-div#resp {
-    text-transform: uppercase;
-    margin: 8px 0px;
-    font-weight: 800;
-}
-p {
-    display: inline-block;
-    
-}
-button {
-    display: block;
-}
-select {
-    padding: 3px;
-}
-select > option {
-    text-transform: uppercase;
-    margin: 2px 0px;
-    font-weight: 800;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
 
+}
+div#cont > select {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+div#cont > select > option {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+div#cont > button {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 9px;
+}
+div#cont > select {
+    display: block;
+    margin-top: 10px;
 }
 footer {
     color: white;
